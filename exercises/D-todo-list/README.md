@@ -22,3 +22,13 @@ We want to render a list of todos on the page. When we click on an item we want 
 * The event listener should add the line-through style to the todo.
 * The event listener should also remove the line-through style conditionally by checking if the style is already applied.
 * All of your HTML should go inside the `<div>` with the id **"content"**.
+
+
+
+
+
+
+
+
+
+
