@@ -2,7 +2,12 @@ function readingList(book) {
   let content = document.querySelector('#content')
   for (let i=0; i<book.length; i++){
     let ul = document.createElement('ul');
+    ul.style.display = "flex"
+    ul.style.alignItems = "center"
+    ul.style.justifyContent = "center"
+    ul.style.padding = "10px"
     let li = document.createElement('li');
+    li.style.listStyle = "none"
     if (book[i].alreadyRead) {
       li.style.backgroundColor = "green";
     } else {
@@ -13,12 +18,7 @@ function readingList(book) {
     p.innerHTML = `${book[i].title} by ${book[i].author}`
     p.style.textAlign = "center"
     p.style.fontWeight = "bolder";
-    ul.style.display = "flex"
-    ul.style.alignItems = "center"
-    ul.style.justifyContent = "center"
-    ul.style.padding = "10px"
     content.style.display = "flex"
-    li.style.listStyle = "none"
     img.src = book[i].img
     img.style.marginTop = "20px"
     img.style.height = "40%"
